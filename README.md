@@ -12,7 +12,9 @@ This project shows how to write a controller in python to control peripherals co
 
 ```
 ├── hw
-│   └── TODO
+│   ├── ip
+│   ├── lightcube.tcl
+│   └── srcs
 ├── image
 │   └── framework.png
 ├── notebook
@@ -20,16 +22,7 @@ This project shows how to write a controller in python to control peripherals co
 │   ├── lc_pynq.py
 │   ├── LightCube_Playground.ipynb
 │   ├── static
-│   │   ├── bootstrap.min.css
-│   │   ├── bootstrap.min.js
-│   │   ├── gold.png
-│   │   ├── jquery.min.js
-│   │   ├── lightcube.js
-│   │   ├── plotly-latest.min.js
-│   │   ├── socket.io.js
-│   │   └── socket.io.js.map
 │   └── templates
-│       └── index.html
 ├── overlay
 │   ├── __init__.py
 │   ├── lightcube.bit
