@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Light Cube Demo</title>
+    <link href="/static/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/static/gold.png" rel="shortcut icon"/>
+</head>
+
+<body>
+<div align="center" class="container-fluid">
+    <div class="row clearfix">
+        <div class="col-md-7 column">
+            <div id="myDiv"></div>
+        </div>
+
+        <div class="col-md-4 column">
+            <br><br><br><br><br><br><br><br><br>
+            <div class="container-fluid">
+                <div class="col-md-12 column">
+                    <h1>Light Cube Demo</h1>
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="container-fluid">
+                <div class="btn-group">
+                    {% for item in func_group %}
+                        <div class="col-md-6 column">
+                            <button id="{{ item }}" style="width: 250px;"
+                                    onclick="animation('{{ item }}')"
+                                    class="btn btn-lg btn-primary btn-block">
+                                {{ item }}
+                            </button>
+                            <br>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="/static/jquery.min.js"></script>
+<script src="/static/bootstrap.min.js"></script>
+<script src="/static/plotly-latest.min.js"></script>
+<script src="/static/socket.io.js"></script>
+<script src="/static/lightcube.js"></script>
+
+</html>
