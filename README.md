@@ -2,7 +2,7 @@
 
 ## Framework
 
-![framework](image\framework.png)
+![framework](image/framework.png)
 
 ## Brief Introduction
 
@@ -11,6 +11,8 @@ This project shows how to write a controller in python to control peripherals co
 ## Repository Organisation
 
 ```
+├── hw
+│   └── TODO
 ├── image
 │   └── framework.png
 ├── notebook
