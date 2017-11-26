@@ -1,19 +1,30 @@
 # PYNQ Light Cube
 
-## Framework
+## Brief Introduction
+
+This repo shows how to write a controller in python to control peripherals connected to FPGA. We could write any peripheral drivers in FPGA to achieve real-time high speed signal processing. Thanks to PYNQ platform, we can easily wrapper the FPGA drivers into simple python code.
+
+## Birdview
 
 ![framework](image/framework.png)
 
-## Brief Introduction
-
-This project shows how to write a controller in python to control peripherals connected to FPGA.We could write any peripheral drivers in FPGA to achieve real-time high speed signal processing.Thanks to PYNQ platform, we can easily wrapper the FPGA drivers into simple python code.
-
 ## Repository Organisation
 
+This repository is organized as follows.
+
+- `hw` contains constraints source file, custom ip, and `tcl` file to rebuild whole hardware design.
+
+- `notebook` contains lightcube controller in python, webserver resources, and notebook for playing.
+
+- `overlay` contains `bit` and `tcl` file of hardware design, and `py` to import overlay.
+
+- `setup.sh` helps setup this lightcube package.
+
 ```
+.
 ├── hw
 │   ├── ip
-│   ├── lightcube.tcl
+│   ├── build_hw.tcl
 │   └── srcs
 ├── image
 │   └── framework.png
@@ -28,15 +39,33 @@ This project shows how to write a controller in python to control peripherals co
 │   ├── lightcube.bit
 │   ├── lightcube.py
 │   └── lightcube.tcl
-└── README.md
+├── README.md
+└── setup.sh
 ```
 
 ## Get Started
 
-```
-git clone https://github.com/sonnyhcl/PYNQ-Light-Cube.git
-bash PYNQ-Light-Cube/setup.sh
-```
+1. Clone this repo on PYNQ board: `git clone https://github.com/sonnyhcl/PYNQ-Light-Cube.git`
+
+2. Run the `setup` bash script to setup lightcube: `bash PYNQ-Light-Cube/setup.sh`
+
+3. Open your browser with `<pynq_ip>:9090` and type in `xilinx` as password.
+
+4. Find `LightCube_Playground` notebook and run. Then you can turn into `<pynq_ip>:8080` to view a webpage displaying real-time status of lightcube.
+
+> tips: `pynq_ip` is the ip of your pynq.
+
+## Hardware Design Rebuilt
+
+In order to rebuild this hardware design, you should clone this repo in a machine installed with `Vivado 2016.1`.
+
+1. Clone this repo: `git clone https://github.com/sonnyhcl/PYNQ-Light-Cube.git`
+
+2. Change your work directory: `cd hw`
+
+3. Make sure you have successfully configure you vivado environments: `source build_hw.tcl`
+
+4. Wait for a minute and then you can open the new-built projects.
 
 # Based On PYNQ
 
