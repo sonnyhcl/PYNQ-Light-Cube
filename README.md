@@ -2,11 +2,11 @@
 
 ## Brief Introduction
 
-This repo shows how to write a controller in python to control peripherals connected to FPGA. We could write any peripheral drivers in FPGA to achieve real-time high speed signal processing. Thanks to PYNQ platform, we can easily wrapper the FPGA drivers into simple python code.
+This repo shows how to write a controller in python to control peripherals connected to FPGA. We can write any peripheral drivers in FPGA to achieve real-time high speed signal processing. Thanks to PYNQ platform, we can easily wrapper the FPGA drivers into simple python code.
 
 ## Birdview
 
-![framework](image/framework.png)
+![framework](image/PYNQ-lightcube.png)
 
 ## Repository Organisation
 
@@ -18,7 +18,7 @@ This repository is organized as follows.
 
 - `overlay` contains `bit` and `tcl` file of hardware design, and `py` to import overlay.
 
-- `setup.sh` helps setup this lightcube package.
+- `setup.sh` helps setting up this lightcube package.
 
 ```
 .
@@ -53,11 +53,11 @@ This repository is organized as follows.
 
 4. Find `LightCube_Playground` notebook and run. Then you can turn into `<pynq_ip>:8080` to view a webpage displaying real-time status of lightcube.
 
-> tips: `pynq_ip` is the ip of your pynq.
+> tips: `<pynq_ip>` is the ip of your pynq.
 
 ## Hardware Design Rebuilt
 
-In order to rebuild this hardware design, you should clone this repo in a machine installed with `Vivado 2016.1`.
+In order to rebuild this hardware design, you should clone this repo in a machine installed with `Vivado 2016.1`(only tested with `Vivado 2016.1`).
 
 1. Clone this repo: `git clone https://github.com/sonnyhcl/PYNQ-Light-Cube.git`
 
@@ -69,4 +69,4 @@ In order to rebuild this hardware design, you should clone this repo in a machin
 
 # Based On PYNQ
 
-This project is based on PYNQ, you can find it [here](https://github.com/Xilinx/PYNQ/)
+This project is based on PYNQ. You can find it[→here](https://github.com/Xilinx/PYNQ/).
