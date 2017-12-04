@@ -3,6 +3,7 @@
 ## Brief Introduction
 
 This repo shows how to write a controller in python to control peripherals connected to FPGA. We can write any peripheral drivers in FPGA to achieve real-time high speed signal processing. Thanks to PYNQ platform, we can easily wrapper the FPGA drivers into simple python code.
+> Detailed introduction: [here](Light-Cube-Introduction.pdf)
 
 ## Birdview
 
@@ -67,17 +68,16 @@ In order to rebuild this hardware design, you should clone this repo in a machin
 
 4. Wait for a minute and then you can open the new-built projects.
 
+
+## Video show
+[![youtube](image/video.png)](https://www.dropbox.com/s/3uubt94pxe8r9ig/demo.mp4?dl=0)
+
+## GIF
+
+- [run playground.ipynb](image/01.gif)
+- [click webpage to control single LED](image/02.gif)
+- [run pre-defined patterns](image/03.gif)
+
 # Based On PYNQ
 
 This project is based on PYNQ. You can find it[→here](https://github.com/Xilinx/PYNQ/).
-
-
-# Video show
-## run playground.ipynb
-![01.gif](image/01.gif)
-
-## click webpage to control single LED
-![02.gif](image/02.gif)
-
-## run pre-defined patterns
-![03.gif](image/03.gif)
