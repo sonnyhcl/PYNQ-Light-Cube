@@ -55,8 +55,8 @@ This repository is organized as follows.
 
 > tips: `<pynq_ip>` is the ip of your pynq.
 
-## Hardware Design Rebuilt
 
+## Hardware Design Rebuilt
 In order to rebuild this hardware design, you should clone this repo in a machine installed with `Vivado 2016.1`(only tested with `Vivado 2016.1`).
 
 1. Clone this repo: `git clone https://github.com/sonnyhcl/PYNQ-Light-Cube.git`
@@ -70,3 +70,14 @@ In order to rebuild this hardware design, you should clone this repo in a machin
 # Based On PYNQ
 
 This project is based on PYNQ. You can find it[→here](https://github.com/Xilinx/PYNQ/).
+
+
+# Video show
+## run playground.ipynb
+![01.gif](image/01.gif)
+
+## click webpage to control single LED
+![02.gif](image/02.gif)
+
+## run pre-defined patterns
+![03.gif](image/03.gif)
