@@ -32,31 +32,12 @@ import pynq
 import pynq.lib
 
 
-__author__ = "Yun Rock Qu"
+__author__ = "Chenglong Hu"
 __copyright__ = "Copyright 2016, Xilinx"
 __email__ = "pynq_support@xilinx.com"
 
 
 class LightCubeOverlay(pynq.Overlay):
-    """ The tutorial overlay for PYNQ framework on the Pynq-Z1 board.
-
-    This overlay will show users how to use DMA, XLNK, GPIO and MMIO
-    drivers. Examples will be shown in the corresponding notebooks.
-
-    Onboard LEDs, push buttons, and switches are all enabled on this overlay.
-
-    Attributes
-    ----------
-    leds : AxiGPIO
-         4-bit output GPIO for interacting with the green LEDs LD0-3
-    buttons : AxiGPIO
-         4-bit input GPIO for interacting with the buttons BTN0-3
-    switches : AxiGPIO
-         2-bit input GPIO for interacting with the switches SW0 and SW1
-    rgbleds : [pynq.board.RGBLED]
-         Wrapper for GPIO for LD4 and LD5 multicolour LEDs
-
-    """
     def __init__(self, bitfile, **kwargs):
         super().__init__(bitfile, **kwargs)
         if self.is_loaded():

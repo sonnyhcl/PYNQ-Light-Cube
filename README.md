@@ -4,7 +4,7 @@
 
 This repo shows how to write a controller in python to control peripherals connected to FPGA. We can write any peripheral drivers in FPGA to achieve real-time high speed signal processing. Thanks to PYNQ platform, we can easily wrapper the FPGA drivers into simple python code.
 
-- [Introduction to  lightcube on pynq ](https://www.dropbox.com/s/3thm1du0j5jpynp/lightcube.mp4?dl=0) and [its slides](Light-Cube-Introduction.pdf)
+- [Introduction to  lightcube on pynq](https://youtu.be/MuuaV33cSX0) and [slides](Light-Cube-Introduction.pdf)
 - [Demo video](https://youtu.be/FeuXpvO6rtA)
 - [Run playground.ipynb](image/01.gif)
 - [Click webpage to control single LED](image/02.gif)
@@ -13,6 +13,22 @@ This repo shows how to write a controller in python to control peripherals conne
 ## Birdview
 
 ![framework](image/PYNQ-lightcube.png)
+
+## Get Started
+
+> Based on PYNQ Image 2.0
+
+1. Clone this repo on PYNQ board: `git clone https://github.com/sonnyhcl/PYNQ-Light-Cube.git`
+
+2. Run the `setup` bash script to setup lightcube: `bash PYNQ-Light-Cube/setup.sh`
+
+3. Open your browser with `<pynq_ip>:9090` and type in `xilinx` as password.
+
+4. Get started using `LightCube_GetStated` notebook.
+
+5. Find `LightCube_Playground` notebook and run. Then you can turn into `<pynq_ip>:8080` to view a webpage displaying real-time status of lightcube.
+
+> tips: `<pynq_ip>` is the ip of your pynq.
 
 ## Repository Organisation
 
@@ -26,7 +42,7 @@ This repository is organized as follows.
 
 - `setup.sh` helps setting up this lightcube package.
 
-```
+```console
 .
 ├── hw
 │   ├── ip
@@ -37,6 +53,7 @@ This repository is organized as follows.
 ├── notebook
 │   ├── lc_const.py
 │   ├── lc_pynq.py
+│   ├── LightCube_GetStarted.ipynb
 │   ├── LightCube_Playground.ipynb
 │   ├── static
 │   └── templates
@@ -48,19 +65,6 @@ This repository is organized as follows.
 ├── README.md
 └── setup.sh
 ```
-
-## Get Started
-
-1. Clone this repo on PYNQ board: `git clone https://github.com/sonnyhcl/PYNQ-Light-Cube.git`
-
-2. Run the `setup` bash script to setup lightcube: `bash PYNQ-Light-Cube/setup.sh`
-
-3. Open your browser with `<pynq_ip>:9090` and type in `xilinx` as password.
-
-4. Find `LightCube_Playground` notebook and run. Then you can turn into `<pynq_ip>:8080` to view a webpage displaying real-time status of lightcube.
-
-> tips: `<pynq_ip>` is the ip of your pynq.
-
 
 ## Hardware Design Rebuilt
 In order to rebuild this hardware design, you should clone this repo in a machine installed with `Vivado 2016.1`(only tested with `Vivado 2016.1`).
