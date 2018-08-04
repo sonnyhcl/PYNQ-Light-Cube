@@ -77,6 +77,7 @@ In order to rebuild this hardware design, you should clone this repo in a machin
 
 4. Wait for a minute and then you can open the new-built projects.
 
+> Thanks to [John Pan@pjh177787](https://github.com/pjh177787) for his hardware design.
 
 # Based On PYNQ
 
